@@ -21,11 +21,10 @@ so there is room from improvement yet!
 ## How to start
 
 ### Bootstrap your framework
-
-Firstly clone this repository, and reset its git history.
-
-    git clone https://github.com/daniran/browserify-gulp-angular-app
-   
+Install nodejs http://nodejs.org/
+Clone this repository, and reset its git history.
+git clone https://github.com/daniran/browserify-gulp-angular-app
+run    npm install   
     # edit package.json and bower.json to use your project details
 
 Note: Currently , `gulp build` and `gulp serve` work,
