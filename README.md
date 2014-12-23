@@ -28,6 +28,7 @@ Install nodejs http://nodejs.org/
     cd browserify-gulp-angular-app
     npm install   
     bower install
+    npm install -g gulp
 
 Note: Currently , `gulp build` and `gulp serve` work,
 but `gulp dist` does not work for Famous-Angular flickrous app.
