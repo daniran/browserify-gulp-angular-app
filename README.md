@@ -22,11 +22,6 @@ Install nodejs http://nodejs.org/
     bower install
     npm install -g gulp
 
-Note: Currently , `gulp build` and `gulp serve` work,
-but `gulp dist` does not work for Famous-Angular flickrous app.
-There is a bug that occurs when one of the angular dependencies gets minified,
-that appears to be DI related.
-
 ### Running build tasks
 
 This project is built using gulp,
