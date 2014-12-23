@@ -5,7 +5,8 @@ Starter project that builds web apps using browserify and gulp
 ## Features
 
 - Uses these frameworks:
-- `browserify` http://browserify.org/ to assemble the js bits
+- `bower` http://bower.io/ to assemble external dependencies
+- `browserify` http://browserify.org/ to assemble the code bits
 - `ng-annotate` https://www.npmjs.com/package/ng-annotate to add the angular injection strings
 - `gulp` http://gulpjs.com/ to build everything
 
