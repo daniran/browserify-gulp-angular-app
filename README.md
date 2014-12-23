@@ -9,14 +9,11 @@ Starter project that builds web apps using browserify and gulp
 - `ng-annotate` https://www.npmjs.com/package/ng-annotate to add the angular injection strings
 - `gulp` http://gulpjs.com/ to build everything
 
-The others usually just satisfy two of these requirements,
-so there is room from improvement yet!
-
 ## How to start
 
 ### Bootstrap your framework
-Install nodejs http://nodejs.org/
 
+Install nodejs http://nodejs.org/
 
     git clone https://github.com/daniran/browserify-gulp-angular-app
     cd browserify-gulp-angular-app
