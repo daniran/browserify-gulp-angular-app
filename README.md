@@ -25,10 +25,7 @@ so there is room from improvement yet!
 Firstly clone this repository, and reset its git history.
 
     git clone https://github.com/daniran/browserify-gulp-angular-app
-    mv browserify-gulp-angular-app my-app
-    cd my-app
-    rm -rf .git
-    git init
+   
     # edit package.json and bower.json to use your project details
 
 Note: Currently , `gulp build` and `gulp serve` work,
