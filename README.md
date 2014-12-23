@@ -4,16 +4,10 @@ Starter project that builds web apps using browserify and gulp
 
 ## Features
 
-There are plenty of write ups and start project repositories
-that combine browserify with gulp...
-So why another one?
-
-- Use `browserify` without using `gulp-browserify`
-  - Because the latter has been "blacklisted"
-- Has a `dist` build step
-  - Concatenation and minification
-- Able to build AngularJs apps
-  - Extra steps required to build an AngularJs app due to the dependency injection system
+- Uses these frameworks:
+- `browserify` http://browserify.org/ to assemble the js bits
+- `ng-annotate` https://www.npmjs.com/package/ng-annotate to add the angular injection strings
+- `gulp` http://gulpjs.com/ to build everything
 
 The others usually just satisfy two of these requirements,
 so there is room from improvement yet!
