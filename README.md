@@ -22,10 +22,12 @@ so there is room from improvement yet!
 
 ### Bootstrap your framework
 Install nodejs http://nodejs.org/
-Clone this repository, and reset its git history.
-git clone https://github.com/daniran/browserify-gulp-angular-app
-run    npm install   
-    # edit package.json and bower.json to use your project details
+
+
+    git clone https://github.com/daniran/browserify-gulp-angular-app
+    cd browserify-gulp-angular-app
+    npm install   
+    bower install
 
 Note: Currently , `gulp build` and `gulp serve` work,
 but `gulp dist` does not work for Famous-Angular flickrous app.
