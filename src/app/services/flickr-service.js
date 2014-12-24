@@ -4,14 +4,16 @@ module.exports = function FlickService($resource, FlickrApiKey) {
 
     return $resource('https://api.flickr.com/services/rest/',
         {
-            method: 'flickr.photos.search',
             format: 'json',
             api_key: FlickrApiKey,
             nojsoncallback: 1
         },
         {
             'search': {
-                method: 'GET'
+                method: 'GET',
+                params: {
+                    method: 'flickr.photos.search'
+                }
             }
         }
     );
