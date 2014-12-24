@@ -1,14 +1,18 @@
 /* @ngInject */
-module.exports = function FlickService($resource) {
+module.exports = function FlickService($resource, FlickrApiKey) {
     'use strict';
 
-    return $resource('https://api.flickr.com/services/feeds/photos_public.gne',
+    return $resource('https://api.flickr.com/services/rest/',
         {
+            method: 'flickr.photos.search',
             format: 'json',
-            jsoncallback: 'JSON_CALLBACK'
+            api_key: FlickrApiKey,
+            nojsoncallback: 1
         },
         {
-            'get': { method: 'JSONP' }
+            'search': {
+                method: 'GET'
+            }
         }
     );
 

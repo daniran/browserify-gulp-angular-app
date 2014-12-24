@@ -8,11 +8,16 @@ var app = angular.module('app', [
 app.config(function($routeProvider) {
     'use strict';
     $routeProvider.when('/hello', {
-        templateUrl: 'hello.html',
+        templateUrl: 'hello.html'
     })
     .otherwise({
         redirectTo: '/hello'
     });
+});
+
+app.constant('FlickrApiKey', function() {
+    'use strict';
+    return '197e87889cad7c709f54b583d9690a4f';
 });
 
 //NOTE Be sure to precede every function exported and added to this module with /* @ngInject */
