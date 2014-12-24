@@ -1,9 +1,9 @@
 /* @ngInject */
-module.exports = function HelloCtrl($http, FlickrService) {
+module.exports = function SearchCtrl($http, $route, FlickrService) {
     'use strict';
     var vm = this;
     vm.displayText = 'Flickr Photos';
-    vm.tags = 'forest';
+    vm.tags = $route.current.params.tag;
     vm.size = 'm';
 
     vm.search = function () {

@@ -7,11 +7,11 @@ var app = angular.module('app', [
 
 app.config(function($routeProvider) {
     'use strict';
-    $routeProvider.when('/hello', {
-        templateUrl: 'hello.html'
+    $routeProvider.when('/search/:tag', {
+        templateUrl: 'search.html'
     })
     .otherwise({
-        redirectTo: '/hello'
+        redirectTo: '/search/forest'
     });
 });
 
@@ -26,4 +26,4 @@ app.constant('FlickrApiKey', function() {
 //If this is not done, AngularJs' dependency injection will fail on minified builds
 //See https://docs.angularjs.org/tutorial/step_05#a-note-on-minification
 app.factory('FlickrService', require('./services/flickr-service'));
-app.controller('HelloCtrl', require('./controllers/hello-ctrl'));
+app.controller('SearchCtrl', require('./controllers/search-ctrl'));
