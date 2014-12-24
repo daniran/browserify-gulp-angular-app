@@ -19,6 +19,7 @@ Install nodejs http://nodejs.org/
     git clone https://github.com/daniran/browserify-gulp-angular-app
     cd browserify-gulp-angular-app
     npm install   
+    npm install -g bower
     bower install
     npm install -g gulp
 
