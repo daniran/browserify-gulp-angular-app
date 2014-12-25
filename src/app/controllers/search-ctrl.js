@@ -7,8 +7,8 @@ module.exports = function SearchCtrl($http, $route, FlickrService) {
     vm.size = 'm';
 
     vm.search = function () {
-        FlickrService.search({ tags: vm.tags }, function (resource) {
-            vm.photos = resource.photos.photo;
+        FlickrService.search({ tags: vm.tags }, function (data) {
+            vm.photos = data.photos.photo;
         });
     };
 
